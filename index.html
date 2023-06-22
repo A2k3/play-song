@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play button</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>click the button to unlock the surprice</h1>
+    <button id="playButton">Play song</button>
+    <button id="playSong">Play song</button>
+
+    <script>
+        var audio = new Audio("assets/audio/hara hara shankara.mp3");
+        var playButton = document.getElementById('playButton');
+        playButton.addEventListener('click', function(){
+            audio.play();
+        });
+
+        var song = new Audio("assets/audio/Jupiter mazha.mp3");
+        var playSong = document.getElementById('playSong');
+        playSong.addEventListener('click', function(){
+            song.play();
+        })
+    </script>
+</body>
+</html>
